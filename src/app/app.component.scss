@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Rubik-Regular';
+  src: local('Rubik-Regular'),
+  url("../assets/fonds/Rubik-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Rubik-Bold';
+  src: local('Rubik-Bold'),
+  url("../assets/fonds/Rubik-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Rubik-Italic";
+  src: local('CS-Italic'),
+  url("../assets/fonds/Rubik-Italic.ttf") format('truetype');
+}
+
+* {
+  font-family: Rubik-Regular !important;
+}
+
+.avatar {
+  margin-left: 16px
+}

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Hilfe
+    </ion-title>
+    <img align="right" width="20px" height="20px" src="/assets/icon/small_logo.png">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img align="center" src="/assets/img/book.jpg" height="100" width="400"/>
+    <ion-card-header>
+      <ion-card-subtitle>Was muss ich beachten bei der Nutzung?</ion-card-subtitle>
+      <ion-card-title align="center">Hinweise und Tipps</ion-card-title>
+    </ion-card-header>
+    <ion-card-content (click)="toAppHints()">
+      <p>Alle grunsätzlichen Informationen rund um Caplacity
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

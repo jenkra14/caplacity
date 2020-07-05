@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Bibliotheken
+    </ion-title>
+    <img align="right" width="20px" height="20px" src="/assets/icon/small_logo.png">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-searchbar></ion-searchbar>
+
+  <ion-card class="library">
+    <img src="/assets/img/dhbw-bib.jpg" alt="" height="150px" width="400px">
+    <ion-card-subtitle align="center">DHBW Stuttgart Bibliothek</ion-card-subtitle>
+    <ion-card-content align="left" (click)="toDHBWBib()">
+      <p>Kronenstraße 53B</p>
+      <p>70174 Stuttgart</p>
+      <p>50 Einzel- und 10 Gruppenarbeitsplätze</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="libary">
+    <img src="/assets/img/city-bib.jpg" alt="" height="150px" width="400px">
+    <ion-card-subtitle align="center">Stadtbibliothek Stuttgart</ion-card-subtitle>
+    <ion-card-content align="left">
+      <p>Mailänder Platz 1</p>
+      <p>70173 Stuttgart</p>
+      <p>150 Einzel- un 70 Gruppenarbeitsplätze</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="libary">
+    <img src="/assets/img/uni-bib.jpg" alt="" height="150px" width="400px">
+    <ion-card-subtitle align="center">Universitätsbibliothek Stuttgart</ion-card-subtitle>
+    <ion-card-content align="left">
+      <p>Holzgartenstraße 16</p>
+      <p>70174 Stuttgart</p>
+      <p>100 Einzel- un 45 Gruppenarbeitsplätze</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

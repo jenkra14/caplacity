@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      DHBW Stuttgart
+    </ion-title>
+    <img align="right" width="20px" height="20px" src="/assets/icon/small_logo.png">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Öffnungszeiten</ion-list-header>
+    <ion-item>
+      <p>Montag - Freitag    8.00 - 20.00 Uhr<br>
+        Samstag             9.00 - 18.00 Uhr</p>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>Ausstattung</ion-list-header>
+    <ion-item>
+      <p>ca. 50.000 Bücher in 3 Hauprgruppen: Technik, Wirtschaft und Sozialwesen<br>
+      Laufende und archivierte Zeitschriften<br>
+      Computer zum recherchieren<br>
+        Buchscanner und Kopierer</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p class="conclusion">{{frei}} freie Plätze</p>
+      </ion-col>
+    </ion-row>
+    <ion-col>
+      <div *ngFor="let seat of seats">
+        <ion-card class="chair">
+          <ion-img *ngIf="seat.frei == 1" src="/assets/img/free_chair.png"></ion-img>
+          <ion-img *ngIf="seat.frei == 0" src="/assets/img/occupied_chair.png"></ion-img>
+        </ion-card>
+      </div>
+    </ion-col>
+  </ion-grid>
+
+</ion-content>
+

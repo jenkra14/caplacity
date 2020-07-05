@@ -1,0 +1,7 @@
+{
+  "name": "caplacity",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
